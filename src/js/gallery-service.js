@@ -10,7 +10,7 @@ const refs = {
   loadMore: document.querySelector('button[data-action="load-more"]'),
 };
 
-refs.searchForm.addEventListener('input', debounce(searchFormInput, 500));
+refs.searchForm.addEventListener('input', debounce(searchFormInput, 2000));
 refs.loadMore.addEventListener('click', loadMoreBtn);
 refs.searchGallery.addEventListener('click', originalImagesWindow);
 
